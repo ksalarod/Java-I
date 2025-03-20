@@ -1,16 +1,19 @@
 public class DaysOfTheWeek {
-    // In Java, enums should be defined outside the method 
+    // In Java, enums should be defined outside the method
     // (typically at the class level), not inside a method.
     enum Day {
         MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 
     }
-    //enum could not be defined inside this main method has to go before 
+    //enum could not be defined inside this main method has to go before
     public static void main(String[] args) {
 
         //today name of variable
         //Day is enum type
-        // Day.FRIDAY is the enum constant predefined value of Day
+        //Day.FRIDAY is the enum constant predefined value of Day
+        //Instead of a predefined value a scanner object could be used to accept user input
+        //alternatively we could use a random generator
+        //we could also use LocalDate.now class part of java.time package
         Day today = Day.FRIDAY;
 
         switch (today) {
