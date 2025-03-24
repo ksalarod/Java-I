@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+public class J104_5 {
+
+    // Function to calculate distance between two points
+    public static double calculateDistance(double x1, double y1, double x2, double y2) {
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+    }
+
+    // Function to round up a number to two decimal places
+    public static double roundUp(double number) {
+        return Math.ceil(number * 100) / 100.0;
+    }
+
+    // Function to determine the quadrant
+    public static String determineQuadrant(double x1, double y1, double x2, double y2) {
+        if (x2 > x1 && y2 > y1) {
+            return "Quadrant I";
+        } else if (x2 < x1 && y2 > y1) {
+            return "Quadrant II";
+        } else if (x2 < x1 && y2 < y1) {
+            return "Quadrant III";  // Corrected logic for Quadrant III
+        } else if (x2 > x1 && y2 < y1) {
+            return "Quadrant IV";
+        } else if (x2 == x1 && y2 != y1) {
+            return "On the Y-axis";
+        } else if (y2 == y1 && x2 != x1) {
+            return "On the X-axis";
+        } else {
+            return "At the origin";
+        }
+    }
+
+    // Function to categorize the distance
+    public static String categorizeDistance(double distance) {
+        if (distance < 5) {
+            return "Short Distance";
+        } else if (distance >= 5 && distance <= 15) {
+            return "Medium Distance";
+        } else {
+            return "Long Distance";
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input
+        System.out.print("x1: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("y1: ");
+        double y1 = scanner.nextDouble();
+        System.out.print("x2: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("y2: ");
+        double y2 = scanner.nextDouble();
+
+        // Calculate distance
+        double distance = calculateDistance(x1, y1, x2, y2);
+
+        // Round up the result
+        double roundedDistance = roundUp(distance);
+
+        // Display results
+        System.out.println("=======================================");
+        // Display distance rounded up to two decimal places and show integer part in parentheses
+        System.out.printf("Distance between (%.1f, %.1f) and (%.1f, %.1f) : %.2f (%d)\n",
+                x1, y1, x2, y2, roundedDistance, (int) roundedDistance);
+        System.out.printf("Integer part: (%d)\n", (int) roundedDistance);
+        System.out.println("Category: " + categorizeDistance(roundedDistance));
+        System.out.println("Point (" + x2 + ", " + y2 + ") is in " + determineQuadrant(x1, y1, x2, y2));
+    }
+}
