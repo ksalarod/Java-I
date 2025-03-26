@@ -13,6 +13,13 @@ public class J105_4 {
 
             if (month == 12) {
                 year++;
-                month = 0; // Reset months after a year
+                month = 0;
             }
         }
+
+        // Print results
+        System.out.println("Tuition will be halved in " + year + " years and " + month + " months.");
+        System.out.println("Total months: " + MonthsTotal);
+        System.out.printf("Final tuition: $%.2f%n", PrincipalTuition);
+    }
+}
