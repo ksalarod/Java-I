@@ -19,3 +19,14 @@ public class Main {
         System.out.printf("PI(15) is %.15f%n", Math.PI);
     }
 }
+
+public class Main {
+
+    public static void main(String[] args) {
+        // Loop to print PI with increasing precision
+        for (int i = 2; i <= 15; i++) {
+            System.out.printf("PI(%d) is %." + i + "f%n", i, Math.PI);
+        }
+    }
+}
+
