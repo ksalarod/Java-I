@@ -13,13 +13,6 @@ public class while1 {
             System.out.print(" " + j);
         }
         System.out.println("\n-----------------------------------------");
-
-        // Print multiplication table header
-        System.out.print("  | ");
-        for (int j = 1; j <= 9; j++) {
-            System.out.printf("%4d", j);
-        }
-        System.out.println();
         
 
         // Print multiplication table
