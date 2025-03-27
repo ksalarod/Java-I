@@ -20,7 +20,7 @@ public class while1 {
             System.out.printf("%4d", j);
         }
         System.out.println();
-        System.out.println("-----------------------------------------");
+        
 
         // Print multiplication table
         for (int i = 1; i <= 9; i++) {
