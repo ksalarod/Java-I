@@ -28,7 +28,8 @@ public class LetsMultiply {
     }
     // method for printing out the product of two numbers
     public static void printout(double num1, double num2, double product) { 
-        System.out.println(num1 + " X " + num2 + " = " + product);
+        System.out.printf("%.1f X %.1f = %.1f\n", num1, num2, product); //prints results to one decimal place
+
     }
 
     public static void main(String[] args) { // main method that calls userinput, calculation & printout method
