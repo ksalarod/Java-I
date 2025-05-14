@@ -41,3 +41,35 @@ if (temp < 40) {
 } else {
     System.out.println("Okay... It is getting a little hot in here. 🔥"); 
 }
+
+// Dog Owner 🐶
+// Codédex
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        boolean isCatOwner = true;
+        boolean isDogOwner = false;
+
+        if (isCatOwner) {
+            System.out.println("Use the code MEOW for 20% off cat items.");
+        } else if (isDogOwner) {
+            System.out.println("Use the code WOOF for 20% off dog items.");
+        } else {
+            System.out.println("Welcome to the Pets Pets Pets store!");
+        }
+        
+    }
+}
+
+/* && and returns True if both conditions are True and returns False otherwise.
+ || or returns True if at least one of the conditions is True and False otherwise.
+
+ Control flow is the order in which the program's code executes.
+The if statement tests a condition for truth and executes the code if it's true.
+else if clause can be added between if and else.
+else executes the code if none of the above is true.
+Relational operators are used to compare two values: ==, !=, >, >=, <, <=.
+and, or are Logical operators used to check for two or more conditions
+*/
+
+
