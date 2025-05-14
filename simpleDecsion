@@ -1,3 +1,13 @@
+/*
+== equal to
+!= not equal to
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
+*/
+
+
 public class HelloWorld {
     public static void main(String[] args) {
         int oats = 2;
@@ -6,4 +16,28 @@ public class HelloWorld {
             System.out.println("Let's make oatmeal today!");
         } 
     }
+}
+
+int score = 85;
+
+if (score > 65) {
+    System.out.println("You passed the test! 🎉");
+}
+
+
+int peppers = 1
+boolean isSpicy = peppers > 3;
+
+if (isSpicy) {
+    System.out.println("Careful! This is spicy fried rice.");
+}
+
+int temp = 90
+
+if (temp < 40) {
+    System.out.println("It may be snowing! ❄️"); 
+} else if (temp < 80) {
+    System.out.println("Enjoy the weather! 👌");
+} else {
+    System.out.println("Okay... It is getting a little hot in here. 🔥"); 
 }
